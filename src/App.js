@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Analytics from './components/Analytics';
 import Cards from './components/Cards';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Newsletter from './components/Newsletter';
+
 function App() {
+  useEffect(() => {
+    document.title = "Finance App";
+  }, []);
   return (
     <div >
       <Navbar/>
